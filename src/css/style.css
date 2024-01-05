@@ -1,0 +1,76 @@
+@charset "UTF-8";
+/* --- ESTILOS PRELOADER --- */
+#overlay {
+  position: fixed;
+  z-index: 99999;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  background: rgb(0, 0, 0);
+  transition: 1s 0.4s;
+}
+
+#progress {
+  width: 450px;
+  height: 100px;
+  display: flex;
+  position: relative;
+  opacity: 1;
+  margin: 0;
+  justify-content: center;
+  flex-direction: row;
+}
+
+.pre-img {
+  position: absolute;
+  width: 275px;
+  opacity: 0.15;
+}
+
+.pre-img.over {
+  height: 97px;
+  opacity: 1;
+  z-index: 2;
+  -webkit-mask-image: url("../img/logo-b.png");
+          mask-image: url("../img/logo-b.png");
+  -webkit-mask-size: 100%;
+          mask-size: 100%;
+  -webkit-mask-repeat: no-repeat;
+          mask-repeat: no-repeat;
+}
+
+img.pre-img.inner-side {
+  opacity: 1;
+  width: 275px;
+  height: 97px;
+  background: #fff;
+}
+
+#innImg {
+  /* Tu estilo original aquí */
+  top: 98px;
+  /* Agregar la clase de animación */
+  animation: slideDown 0.25s ease-in-out forwards;
+}
+
+@keyframes slideDown {
+  to {
+    top: 0;
+  }
+}
+#progstat {
+  position: absolute;
+  right: 95px;
+  font-size: 1.25em;
+  font-family: "Gilroy";
+  font-weight: 500;
+  letter-spacing: 3px;
+  color: #fff;
+}
+
+/* --- FIN ESTILOS PRELOADER --- *//*# sourceMappingURL=style.css.map */
